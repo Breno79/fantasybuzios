@@ -1,6 +1,11 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { MapPin, Clock, Car, Camera } from 'lucide-react';
+import { MapPin, Car, Camera, Utensils, Waves, Sun, Eye, PersonStanding } from 'lucide-react';
+import { useState } from 'react';
+import {
+  Dialog,
+  DialogContent,
+} from "@/components/ui/dialog";
 const translations = {
   pt: {
     title: 'Descubra Búzios',
@@ -11,25 +16,29 @@ const translations = {
       ruasPedras: {
         name: 'Rua das Pedras',
         description: 'Centro gastronômico e cultural',
-        distance: '5 min de caminhada'
+        carDistance: '05 mins de carro',
+        walkDistance: '14 mins a pé'
       },
       praiaBrava: {
         name: 'Praia Brava',
         description: 'Praia selvagem para surfistas',
-        distance: '10 min de carro'
+        carDistance: '02 mins de carro',
+        walkDistance: '12 mins a pé'
       },
-      praiaFerradura: {
-        name: 'Praia da Ferradura',
-        description: 'Águas calmas e cristalinas',
-        distance: '8 min de carro'
+      praiaJoaoFernandes: {
+        name: 'Praia João Fernandes',
+        description: 'Águas cristalinas e tranquilas',
+        carDistance: '04 mins de carro',
+        walkDistance: '24 mins a pé'
       },
-      centroHistorico: {
-        name: 'Centro Histórico',
-        description: 'Arquitetura colonial preservada',
-        distance: '3 min de caminhada'
+      orlaBrigitte: {
+        name: 'Orla Brigitte Bardot',
+        description: 'Calçadão com vista deslumbrante',
+        carDistance: '05 mins de carro',
+        walkDistance: '15 mins a pé'
       }
     },
-    exploreMore: 'Explorar Região'
+    exploreMore: 'Conheça Búzios'
   },
   en: {
     title: 'Discover Búzios',
@@ -40,25 +49,29 @@ const translations = {
       ruasPedras: {
         name: 'Rua das Pedras',
         description: 'Gastronomic and cultural center',
-        distance: '5 min walk'
+        carDistance: '05 mins by car',
+        walkDistance: '14 mins walk'
       },
       praiaBrava: {
         name: 'Praia Brava',
         description: 'Wild beach for surfers',
-        distance: '10 min drive'
+        carDistance: '02 mins by car',
+        walkDistance: '12 mins walk'
       },
-      praiaFerradura: {
-        name: 'Praia da Ferradura',
-        description: 'Calm and crystal clear waters',
-        distance: '8 min drive'
+      praiaJoaoFernandes: {
+        name: 'Praia João Fernandes',
+        description: 'Crystal clear and calm waters',
+        carDistance: '04 mins by car',
+        walkDistance: '24 mins walk'
       },
-      centroHistorico: {
-        name: 'Historic Center',
-        description: 'Preserved colonial architecture',
-        distance: '3 min walk'
+      orlaBrigitte: {
+        name: 'Orla Brigitte Bardot',
+        description: 'Boardwalk with stunning views',
+        carDistance: '05 mins by car',
+        walkDistance: '15 mins walk'
       }
     },
-    exploreMore: 'Explore Region'
+    exploreMore: 'Discover Búzios'
   },
   es: {
     title: 'Descubre Búzios',
@@ -69,25 +82,29 @@ const translations = {
       ruasPedras: {
         name: 'Rua das Pedras',
         description: 'Centro gastronómico y cultural',
-        distance: '5 min caminando'
+        carDistance: '05 mins en coche',
+        walkDistance: '14 mins caminando'
       },
       praiaBrava: {
         name: 'Praia Brava',
         description: 'Playa salvaje para surfistas',
-        distance: '10 min en coche'
+        carDistance: '02 mins en coche',
+        walkDistance: '12 mins caminando'
       },
-      praiaFerradura: {
-        name: 'Praia da Ferradura',
-        description: 'Aguas tranquilas y cristalinas',
-        distance: '8 min en coche'
+      praiaJoaoFernandes: {
+        name: 'Praia João Fernandes',
+        description: 'Aguas cristalinas y tranquilas',
+        carDistance: '04 mins en coche',
+        walkDistance: '24 mins caminando'
       },
-      centroHistorico: {
-        name: 'Centro Histórico',
-        description: 'Arquitectura colonial preservada',
-        distance: '3 min caminando'
+      orlaBrigitte: {
+        name: 'Orla Brigitte Bardot',
+        description: 'Paseo marítimo con vistas impresionantes',
+        carDistance: '05 mins en coche',
+        walkDistance: '15 mins caminando'
       }
     },
-    exploreMore: 'Explorar Región'
+    exploreMore: 'Conoce Búzios'
   }
 };
 interface CidadeSectionProps {
@@ -96,13 +113,26 @@ interface CidadeSectionProps {
 export const CidadeSection = ({
   currentLang
 }: CidadeSectionProps) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const t = translations[currentLang as keyof typeof translations];
+  
   const placeIcons = {
-    ruasPedras: Camera,
-    praiaBrava: MapPin,
-    praiaFerradura: MapPin,
-    centroHistorico: Clock
+    ruasPedras: Utensils,
+    praiaBrava: Waves,
+    praiaJoaoFernandes: Sun,
+    orlaBrigitte: Eye
   };
+
+  const buziosImages = [
+    '/lovable-uploads/25945a5f-0ff4-4938-9be0-59329adc706b.png',
+    '/lovable-uploads/58c3eb13-7b6a-4dc2-b24c-48f0bfb3daad.png',
+    '/lovable-uploads/9aabd046-ac4a-4040-8e4a-a497cda751f9.png',
+    '/lovable-uploads/9f78dd96-b5bf-48a9-a540-2a6c4cf149ea.png',
+    '/lovable-uploads/3e28c2f9-45b1-4f96-b28b-e9e2190fdd9a.png',
+    '/lovable-uploads/55d43c9c-3cf1-47af-8fd1-c68d0c68d9e4.png',
+    '/lovable-uploads/94a7fb58-e78d-4be8-b811-d30fdda9f0a8.png',
+    '/lovable-uploads/3fab9d61-0a36-4915-93ae-fa867503e08e.png'
+  ];
   return <section id="cidade" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
@@ -144,9 +174,15 @@ export const CidadeSection = ({
                       <p className="text-sm text-muted-foreground mb-3">
                         {place.description}
                       </p>
-                      <div className="flex items-center justify-center text-xs text-primary font-medium">
-                        <Car className="w-3 h-3 mr-1" />
-                        {place.distance}
+                      <div className="space-y-1">
+                        <div className="flex items-center justify-center text-xs text-primary font-medium">
+                          <Car className="w-3 h-3 mr-1" />
+                          {place.carDistance}
+                        </div>
+                        <div className="flex items-center justify-center text-xs text-muted-foreground font-medium">
+                          <PersonStanding className="w-3 h-3 mr-1" />
+                          {place.walkDistance}
+                        </div>
                       </div>
                     </CardContent>
                   </Card>;
@@ -156,13 +192,31 @@ export const CidadeSection = ({
 
           {/* CTA */}
           <div className="text-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-semibold shadow-villa" onClick={() => document.getElementById('contato')?.scrollIntoView({
-            behavior: 'smooth'
-          })}>
+            <button 
+              onClick={() => setIsModalOpen(true)}
+              className="text-2xl font-semibold text-primary hover:text-primary/80 transition-elegant cursor-pointer border-none bg-transparent"
+            >
               {t.exploreMore}
-            </Button>
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Modal for Búzios Images */}
+      <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+        <DialogContent className="max-w-6xl w-full p-0 bg-background/95 backdrop-blur-sm">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6">
+            {buziosImages.map((image, index) => (
+              <div key={index} className="aspect-square overflow-hidden rounded-lg">
+                <img
+                  src={image}
+                  alt={`Búzios - Image ${index + 1}`}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
+                />
+              </div>
+            ))}
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>;
 };
