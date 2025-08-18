@@ -138,10 +138,10 @@ export const CidadeSection = ({
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               {t.title}
             </h2>
-            <p className="text-xl text-accent-foreground/80 mb-8">
+            <p className="text-xl text-foreground mb-8">
               {t.subtitle}
             </p>
             <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
