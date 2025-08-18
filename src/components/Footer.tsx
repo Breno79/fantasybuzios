@@ -5,8 +5,8 @@ const translations = {
     quickLinks: 'Links Rápidos',
     contact: 'Contato',
     social: 'Redes Sociais',
-    address: 'Armação dos Búzios, RJ - Brasil',
-    phone: '+55 (22) 9999-9999',
+    address: 'Rua Quinze, 22 - Brava, Armação dos Búzios - RJ, 28950-000',
+    phone: '+55 22 999393691',
     email: 'contato@fantasybuzios.com.br',
     copyright: '© 2024 Fantasy Búzios Guesthouse. Todos os direitos reservados.',
     links: {
@@ -22,8 +22,8 @@ const translations = {
     quickLinks: 'Quick Links',
     contact: 'Contact',
     social: 'Social Media',
-    address: 'Armação dos Búzios, RJ - Brazil',
-    phone: '+55 (22) 9999-9999',
+    address: 'Rua Quinze, 22 - Brava, Armação dos Búzios - RJ, 28950-000',
+    phone: '+55 22 999393691',
     email: 'contact@fantasybuzios.com',
     copyright: '© 2024 Fantasy Búzios Guesthouse. All rights reserved.',
     links: {
@@ -39,8 +39,8 @@ const translations = {
     quickLinks: 'Enlaces Rápidos',
     contact: 'Contacto',
     social: 'Redes Sociales',
-    address: 'Armação dos Búzios, RJ - Brasil',
-    phone: '+55 (22) 9999-9999',
+    address: 'Rua Quinze, 22 - Brava, Armação dos Búzios - RJ, 28950-000',
+    phone: '+55 22 999393691',
     email: 'contacto@fantasybuzios.com',
     copyright: '© 2024 Fantasy Búzios Guesthouse. Todos los derechos reservados.',
     links: {
@@ -114,11 +114,11 @@ export const Footer = ({
         <div className="border-t border-primary-foreground/20 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex space-x-4">
-              <button onClick={() => window.open('https://wa.me/5522999999999', '_blank')} className="w-10 h-10 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center transition-elegant">
-                <MessageCircle className="w-5 h-5 text-white" />
+              <button onClick={() => window.open('https://wa.me/5522999393691', '_blank')} className="w-10 h-10 bg-secondary hover:bg-secondary/90 rounded-full flex items-center justify-center transition-elegant shadow-golden">
+                <MessageCircle className="w-5 h-5 text-secondary-foreground" />
               </button>
-              <button onClick={() => window.open('https://instagram.com/fantasybuzios', '_blank')} className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-full flex items-center justify-center transition-elegant">
-                <Instagram className="w-5 h-5 text-white" />
+              <button onClick={() => window.open('https://instagram.com/fantasybuzios', '_blank')} className="w-10 h-10 bg-secondary hover:bg-secondary/90 rounded-full flex items-center justify-center transition-elegant shadow-golden">
+                <Instagram className="w-5 h-5 text-secondary-foreground" />
               </button>
             </div>
             

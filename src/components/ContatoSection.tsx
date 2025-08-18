@@ -22,13 +22,13 @@ const translations = {
     contact: {
       title: 'Informações de Contato',
       address: 'Endereço',
-      addressText: 'Armação dos Búzios, RJ - Brasil',
+      addressText: 'Rua Quinze, 22 - Brava, Armação dos Búzios - RJ, 28950-000',
       phone: 'Telefone',
-      phoneText: '+55 (22) 9999-9999',
+      phoneText: '+55 22 999393691',
       email: 'E-mail',
       emailText: 'contato@fantasybuzios.com.br',
-      hours: 'Horário de Atendimento',
-      hoursText: '24 horas - Recepção'
+      hours: 'Atendimento & Check-In',
+      hoursText: '08am - 22pm'
     },
     social: {
       title: 'Redes Sociais',
@@ -51,13 +51,13 @@ const translations = {
     contact: {
       title: 'Contact Information',
       address: 'Address',
-      addressText: 'Armação dos Búzios, RJ - Brazil',
+      addressText: 'Rua Quinze, 22 - Brava, Armação dos Búzios - RJ, 28950-000',
       phone: 'Phone',
-      phoneText: '+55 (22) 9999-9999',
+      phoneText: '+55 22 999393691',
       email: 'Email',
-      emailText: 'contact@fantasybuzios.com',
-      hours: 'Business Hours',
-      hoursText: '24 hours - Reception'
+      emailText: 'contato@fantasybuzios.com.br',
+      hours: 'Service & Check-In',
+      hoursText: '08am - 22pm'
     },
     social: {
       title: 'Social Media',
@@ -80,13 +80,13 @@ const translations = {
     contact: {
       title: 'Información de Contacto',
       address: 'Dirección',
-      addressText: 'Armação dos Búzios, RJ - Brasil',
+      addressText: 'Rua Quinze, 22 - Brava, Armação dos Búzios - RJ, 28950-000',
       phone: 'Teléfono',
-      phoneText: '+55 (22) 9999-9999',
+      phoneText: '+55 22 999393691',
       email: 'Correo Electrónico',
-      emailText: 'contacto@fantasybuzios.com',
-      hours: 'Horario de Atención',
-      hoursText: '24 horas - Recepción'
+      emailText: 'contato@fantasybuzios.com.br',
+      hours: 'Atención & Check-In',
+      hoursText: '08am - 22pm'
     },
     social: {
       title: 'Redes Sociales',
@@ -228,12 +228,12 @@ export const ContatoSection = ({
                 </CardHeader>
                 <CardContent className="p-6">
                   <div className="flex space-x-4">
-                    <Button size="lg" className="flex-1 bg-green-500 hover:bg-green-600 text-white" onClick={() => window.open('https://wa.me/5522999999999', '_blank')}>
+                    <Button size="lg" className="flex-1 bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-golden" onClick={() => window.open('https://wa.me/5522999393691', '_blank')}>
                       <MessageCircle className="w-5 h-5 mr-2" />
                       {t.social.whatsapp}
                     </Button>
                     
-                    <Button size="lg" className="flex-1 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white" onClick={() => window.open('https://instagram.com/fantasybuzios', '_blank')}>
+                    <Button size="lg" className="flex-1 bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-golden" onClick={() => window.open('https://instagram.com/fantasybuzios', '_blank')}>
                       <Instagram className="w-5 h-5 mr-2" />
                       {t.social.instagram}
                     </Button>
