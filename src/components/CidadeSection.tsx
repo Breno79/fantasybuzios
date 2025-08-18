@@ -38,7 +38,7 @@ const translations = {
         walkDistance: '15 mins a pé'
       }
     },
-    exploreMore: 'Conheça Búzios'
+    exploreMore: 'Veja Mais'
   },
   en: {
     title: 'Discover Búzios',
@@ -71,7 +71,7 @@ const translations = {
         walkDistance: '15 mins walk'
       }
     },
-    exploreMore: 'Discover Búzios'
+    exploreMore: 'Veja Mais'
   },
   es: {
     title: 'Descubre Búzios',
@@ -104,7 +104,7 @@ const translations = {
         walkDistance: '15 mins caminando'
       }
     },
-    exploreMore: 'Conoce Búzios'
+    exploreMore: 'Veja Mais'
   }
 };
 interface CidadeSectionProps {
@@ -194,7 +194,7 @@ export const CidadeSection = ({
           <div className="text-center">
             <button 
               onClick={() => setIsModalOpen(true)}
-              className="text-2xl font-semibold text-primary hover:text-primary/80 transition-elegant cursor-pointer border-none bg-transparent"
+              className="px-8 py-4 text-xl font-semibold bg-primary text-primary-foreground hover:bg-primary/90 transition-elegant cursor-pointer border-none rounded-lg"
             >
               {t.exploreMore}
             </button>
