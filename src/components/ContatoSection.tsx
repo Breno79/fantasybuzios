@@ -145,35 +145,35 @@ export const ContatoSection = ({
             <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-6 lg:gap-12">
             {/* Contact Form */}
-            <Card className="shadow-villa border-0">
-              <CardHeader className="bg-gradient-primary text-primary-foreground bg-[#3e5650]">
-                <CardTitle className="text-2xl">{t.form.title}</CardTitle>
+            <Card className="shadow-villa border-0 w-full min-w-0">
+              <CardHeader className="bg-gradient-primary text-primary-foreground bg-[#3e5650] p-4 lg:p-6">
+                <CardTitle className="text-xl lg:text-2xl">{t.form.title}</CardTitle>
               </CardHeader>
-              <CardContent className="p-6">
-                <form onSubmit={handleSubmit} className="space-y-6">
+              <CardContent className="p-4 lg:p-6">
+                <form onSubmit={handleSubmit} className="space-y-4 lg:space-y-6">
                   <div>
-                    <Label htmlFor="name" className="text-foreground">{t.form.name}</Label>
-                    <Input id="name" name="name" value={formData.name} onChange={handleChange} required className="mt-2" />
+                    <Label htmlFor="name" className="text-foreground text-sm lg:text-base">{t.form.name}</Label>
+                    <Input id="name" name="name" value={formData.name} onChange={handleChange} required className="mt-2 w-full" />
                   </div>
                   
                   <div>
-                    <Label htmlFor="email" className="text-foreground">{t.form.email}</Label>
-                    <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required className="mt-2" />
+                    <Label htmlFor="email" className="text-foreground text-sm lg:text-base">{t.form.email}</Label>
+                    <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required className="mt-2 w-full" />
                   </div>
                   
                   <div>
-                    <Label htmlFor="phone" className="text-foreground">{t.form.phone}</Label>
-                    <Input id="phone" name="phone" value={formData.phone} onChange={handleChange} className="mt-2" />
+                    <Label htmlFor="phone" className="text-foreground text-sm lg:text-base">{t.form.phone}</Label>
+                    <Input id="phone" name="phone" value={formData.phone} onChange={handleChange} className="mt-2 w-full" />
                   </div>
                   
                   <div>
-                    <Label htmlFor="message" className="text-foreground">{t.form.message}</Label>
-                    <Textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows={4} className="mt-2 resize-none" />
+                    <Label htmlFor="message" className="text-foreground text-sm lg:text-base">{t.form.message}</Label>
+                    <Textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows={4} className="mt-2 resize-none w-full" />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-golden text-lg py-3">
+                  <Button type="submit" className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-golden text-base lg:text-lg py-2 lg:py-3">
                     {t.form.send}
                   </Button>
                 </form>
@@ -181,61 +181,61 @@ export const ContatoSection = ({
             </Card>
 
             {/* Contact Information */}
-            <div className="space-y-6">
-              <Card className="shadow-villa border-0">
-                <CardHeader className="text-primary-foreground bg-[#3e5650]">
-                  <CardTitle className="text-xl">{t.contact.title}</CardTitle>
+            <div className="space-y-4 lg:space-y-6 w-full min-w-0">
+              <Card className="shadow-villa border-0 w-full min-w-0">
+                <CardHeader className="text-primary-foreground bg-[#3e5650] p-4 lg:p-6">
+                  <CardTitle className="text-lg lg:text-xl">{t.contact.title}</CardTitle>
                 </CardHeader>
-                <CardContent className="p-6 space-y-4">
+                <CardContent className="p-4 lg:p-6 space-y-3 lg:space-y-4">
                   <div className="flex items-start space-x-3">
-                    <MapPin className="w-5 h-5 text-primary mt-1" />
-                    <div>
-                      <p className="font-semibold text-foreground">{t.contact.address}</p>
-                      <p className="text-muted-foreground">{t.contact.addressText}</p>
+                    <MapPin className="w-4 h-4 lg:w-5 lg:h-5 text-primary mt-1 flex-shrink-0" />
+                    <div className="min-w-0 flex-1">
+                      <p className="font-semibold text-foreground text-sm lg:text-base">{t.contact.address}</p>
+                      <p className="text-muted-foreground text-xs lg:text-sm break-words">{t.contact.addressText}</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <Phone className="w-5 h-5 text-primary mt-1" />
-                    <div>
-                      <p className="font-semibold text-foreground">{t.contact.phone}</p>
-                      <p className="text-muted-foreground">{t.contact.phoneText}</p>
+                    <Phone className="w-4 h-4 lg:w-5 lg:h-5 text-primary mt-1 flex-shrink-0" />
+                    <div className="min-w-0 flex-1">
+                      <p className="font-semibold text-foreground text-sm lg:text-base">{t.contact.phone}</p>
+                      <p className="text-muted-foreground text-xs lg:text-sm break-words">{t.contact.phoneText}</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <Mail className="w-5 h-5 text-primary mt-1" />
-                    <div>
-                      <p className="font-semibold text-foreground">{t.contact.email}</p>
-                      <p className="text-muted-foreground">{t.contact.emailText}</p>
+                    <Mail className="w-4 h-4 lg:w-5 lg:h-5 text-primary mt-1 flex-shrink-0" />
+                    <div className="min-w-0 flex-1">
+                      <p className="font-semibold text-foreground text-sm lg:text-base">{t.contact.email}</p>
+                      <p className="text-muted-foreground text-xs lg:text-sm break-words">{t.contact.emailText}</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <Clock className="w-5 h-5 text-primary mt-1" />
-                    <div>
-                      <p className="font-semibold text-foreground">{t.contact.hours}</p>
-                      <p className="text-muted-foreground">{t.contact.hoursText}</p>
+                    <Clock className="w-4 h-4 lg:w-5 lg:h-5 text-primary mt-1 flex-shrink-0" />
+                    <div className="min-w-0 flex-1">
+                      <p className="font-semibold text-foreground text-sm lg:text-base">{t.contact.hours}</p>
+                      <p className="text-muted-foreground text-xs lg:text-sm break-words">{t.contact.hoursText}</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
               {/* Social Media */}
-              <Card className="shadow-villa border-0">
-                <CardHeader className="text-secondary-foreground bg-[3e5650_] bg-[#3e5650]">
-                  <CardTitle className="text-xl text-white">{t.social.title}</CardTitle>
+              <Card className="shadow-villa border-0 w-full min-w-0">
+                <CardHeader className="text-secondary-foreground bg-[#3e5650] p-4 lg:p-6">
+                  <CardTitle className="text-lg lg:text-xl text-white">{t.social.title}</CardTitle>
                 </CardHeader>
-                <CardContent className="p-6">
-                  <div className="flex space-x-4">
-                    <Button size="lg" className="flex-1 bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-golden" onClick={() => window.open('https://wa.me/5522999393691', '_blank')}>
-                      <MessageCircle className="w-5 h-5 mr-2" />
-                      {t.social.whatsapp}
+                <CardContent className="p-4 lg:p-6">
+                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                    <Button size="sm" className="flex-1 bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-golden min-w-0 w-full sm:w-auto" onClick={() => window.open('https://wa.me/5522999393691', '_blank')}>
+                      <MessageCircle className="w-4 h-4 mr-2 flex-shrink-0" />
+                      <span className="truncate">{t.social.whatsapp}</span>
                     </Button>
                     
-                    <Button size="lg" className="flex-1 bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-golden" onClick={() => window.open('https://instagram.com/fantasybuzios', '_blank')}>
-                      <Instagram className="w-5 h-5 mr-2" />
-                      {t.social.instagram}
+                    <Button size="sm" className="flex-1 bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-golden min-w-0 w-full sm:w-auto" onClick={() => window.open('https://instagram.com/fantasybuzios', '_blank')}>
+                      <Instagram className="w-4 h-4 mr-2 flex-shrink-0" />
+                      <span className="truncate">{t.social.instagram}</span>
                     </Button>
                   </div>
                 </CardContent>
