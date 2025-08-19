@@ -38,10 +38,10 @@ export const HeroSection = ({
       });
     }
   };
-  return <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section id="hero" className="relative min-h-screen md:min-h-screen h-[70vh] md:h-screen flex items-center justify-center overflow-hidden">
       {/* Hero Image */}
       <div className="absolute inset-0 z-0">
-        <img src="/lovable-uploads/5f399316-9d9d-4888-a0a2-f9743c0e8212.png" alt="Fantasy Búzios Guesthouse Villa" className="w-full h-full object-cover" />
+        <img src="/lovable-uploads/5f399316-9d9d-4888-a0a2-f9743c0e8212.png" alt="Fantasy Búzios Guesthouse Villa" className="w-full h-full object-cover md:object-cover object-center" />
       </div>
 
       {/* Content */}
