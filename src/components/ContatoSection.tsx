@@ -6,6 +6,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { MapPin, Phone, Mail, MessageCircle, Instagram, Clock } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { supabase } from '@/integrations/supabase/client';
 const translations = {
   pt: {
     title: 'Entre em Contato',
@@ -107,23 +108,46 @@ export const ContatoSection = ({
     phone: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const {
     toast
   } = useToast();
   const t = translations[currentLang as keyof typeof translations];
-  const handleSubmit = (e: React.FormEvent) => {
+  
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    toast({
-      title: t.form.success,
-      description: "Entraremos em contato em breve!"
-    });
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      message: ''
-    });
+    setIsSubmitting(true);
+    
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      toast({
+        title: t.form.success,
+        description: "Entraremos em contato em breve!"
+      });
+      
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error sending contact email:', error);
+      toast({
+        title: "Erro ao enviar mensagem",
+        description: "Tente novamente ou entre em contato pelo WhatsApp.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -173,8 +197,12 @@ export const ContatoSection = ({
                     <Textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows={4} className="mt-2 resize-none w-full" />
                   </div>
                   
-                  <Button type="submit" className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-golden text-base lg:text-lg py-2 lg:py-3">
-                    {t.form.send}
+                  <Button 
+                    type="submit" 
+                    disabled={isSubmitting}
+                    className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-golden text-base lg:text-lg py-2 lg:py-3 disabled:opacity-50"
+                  >
+                    {isSubmitting ? 'Enviando...' : t.form.send}
                   </Button>
                 </form>
               </CardContent>
