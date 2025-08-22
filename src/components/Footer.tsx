@@ -1,7 +1,7 @@
 import { MapPin, Phone, Mail, Instagram, MessageCircle } from 'lucide-react';
 const translations = {
   pt: {
-    description: 'Sua experiência única em Armação dos Búzios começa aqui. Conforto, elegância e hospitalidade brasileira em perfeita harmonia.',
+    description: 'Desfrute da Armação de Búzios de uma forma única e inesquecível! Conforto, elegância e a hospitalidade brasileira em perfeita harmonia com a natureza exuberante da cidade mais linda do Brasil.',
     quickLinks: 'Links Rápidos',
     contact: 'Contato',
     social: 'Redes Sociais',
