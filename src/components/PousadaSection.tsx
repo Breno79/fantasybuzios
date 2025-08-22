@@ -7,13 +7,13 @@ const translations = {
   pt: {
     title: 'Nossa Pousada',
     subtitle: 'Conforto e elegância em Búzios',
-    description: 'A Fantasy Búzios Guesthouse oferece uma experiência única de hospitalidade, combinando o charme rústico brasileiro com amenidades modernas. Nossa propriedade boutique está estrategicamente localizada para proporcionar privacidade e acesso fácil às praias mais belas de Búzios.',
+    description: 'A Fantasy Búzios Guesthouse oferece uma experiência única de hospitalidade, combinando o charme rústico brasileiro com amenidades modernas. Nossa propriedade guesthouse está estrategicamente localizada para proporcionar privacidade e acesso fácil às praias mais belas de Búzios.',
     features: 'Nossas Comodidades',
     amenities: {
       wifi: 'Wi-Fi Gratuito',
       parking: 'Rua Tranquila',
       breakfast: 'Café da Manhã',
-      pool: 'Piscina e Spa',
+      pool: 'Piscina & Deck',
       garden: 'Jardim Tropical',
       sun: 'Vista para o Mar'
     }
@@ -21,7 +21,7 @@ const translations = {
   en: {
     title: 'Our Inn',
     subtitle: 'Comfort and elegance in Búzios',
-    description: 'Fantasy Búzios Guesthouse offers a unique hospitality experience, combining Brazilian rustic charm with modern amenities. Our boutique property is strategically located to provide privacy and easy access to the most beautiful beaches in Búzios.',
+    description: 'Fantasy Búzios Guesthouse offers a unique hospitality experience, combining Brazilian rustic charm with modern amenities. Our guesthouse property is strategically located to provide privacy and easy access to the most beautiful beaches in Búzios.',
     features: 'Our Amenities',
     amenities: {
       wifi: 'Free Wi-Fi',
@@ -35,7 +35,7 @@ const translations = {
   es: {
     title: 'Nuestra Posada',
     subtitle: 'Comodidad y elegancia en Búzios',
-    description: 'Fantasy Búzios Guesthouse ofrece una experiencia única de hospitalidad, combinando el encanto rústico brasileño con comodidades modernas. Nuestra propiedad boutique está estratégicamente ubicada para brindar privacidad y fácil acceso a las playas más hermosas de Búzios.',
+    description: 'Fantasy Búzios Guesthouse ofrece una experiencia única de hospitalidad, combinando el encanto rústico brasileño con comodidades modernas. Nuestra propiedad guesthouse está estratégicamente ubicada para brindar privacidad y fácil acceso a las playas más hermosas de Búzios.',
     features: 'Nuestras Comodidades',
     amenities: {
       wifi: 'Wi-Fi Gratuito',

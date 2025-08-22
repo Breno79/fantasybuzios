@@ -4,21 +4,21 @@ const translations = {
   pt: {
     welcome: 'Bem-vindos ao',
     subtitle: 'Uma experiência única em Armação dos Búzios',
-    description: 'Desfrute do paraíso tropical em nossa pousada boutique, onde o luxo encontra a natureza em perfeita harmonia.',
+    description: 'Desfrute do paraíso tropical em nossa pousada guesthouse, onde o luxo encontra a natureza em perfeita harmonia.',
     discover: 'Descobrir Mais',
     book: 'Reservar Agora'
   },
   en: {
     welcome: 'Welcome to',
     subtitle: 'A unique experience in Armação dos Búzios',
-    description: 'Enjoy tropical paradise at our boutique guesthouse, where luxury meets nature in perfect harmony.',
+    description: 'Enjoy tropical paradise at our guesthouse, where luxury meets nature in perfect harmony.',
     discover: 'Discover More',
     book: 'Book Now'
   },
   es: {
     welcome: 'Bienvenidos a',
     subtitle: 'Una experiencia única en Armação dos Búzios',
-    description: 'Disfruta del paraíso tropical en nuestra posada boutique, donde el lujo se encuentra con la naturaleza en perfecta armonía.',
+    description: 'Disfruta del paraíso tropical en nuestra posada guesthouse, donde el lujo se encuentra con la naturaleza en perfecta armonía.',
     discover: 'Descubrir Más',
     book: 'Reservar Ahora'
   }
