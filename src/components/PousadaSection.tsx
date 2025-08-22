@@ -15,7 +15,7 @@ const translations = {
       breakfast: 'Café da Manhã',
       pool: 'Piscina & Deck',
       garden: 'Jardim Tropical',
-      sun: 'Vista para o Mar'
+      sun: 'Vista do Mar'
     }
   },
   en: {
