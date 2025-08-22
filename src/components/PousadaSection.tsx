@@ -7,7 +7,7 @@ const translations = {
   pt: {
     title: 'Nossa Pousada',
     subtitle: 'Conforto e elegância em Búzios',
-    description: 'A Fantasy Búzios Guesthouse oferece uma experiência única de hospitalidade, combinando o charme rústico brasileiro com amenidades modernas. Nossa propriedade guesthouse está estrategicamente localizada para proporcionar privacidade e acesso fácil às praias mais belas de Búzios.',
+    description: 'A Fantasy Búzios Guesthouse oferece uma experiência única de hospitalidade, combinando o charme rústico brasileiro com amenidades modernas. Nossa Pousada se encontra em localização privilegiada, proporcionando privacidade e acesso fácil às praias mais belas de Búzios.',
     features: 'Nossas Comodidades',
     amenities: {
       wifi: 'Wi-Fi Gratuito',
