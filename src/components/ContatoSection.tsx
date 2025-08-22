@@ -256,12 +256,12 @@ export const ContatoSection = ({
                 </CardHeader>
                 <CardContent className="p-4 lg:p-6">
                   <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                    <Button size="sm" className="flex-1 bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-golden min-w-0 w-full sm:w-auto" onClick={() => window.open('https://wa.me/5522999393691', '_blank')}>
+                    <Button size="sm" className="flex-1 bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-golden min-w-0 w-full sm:w-auto py-3 sm:py-2" onClick={() => window.open('https://wa.me/5522999393691', '_blank')}>
                       <MessageCircle className="w-4 h-4 mr-2 flex-shrink-0" />
                       <span className="truncate">{t.social.whatsapp}</span>
                     </Button>
                     
-                    <Button size="sm" className="flex-1 bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-golden min-w-0 w-full sm:w-auto" onClick={() => window.open('https://instagram.com/fantasybuzios', '_blank')}>
+                    <Button size="sm" className="flex-1 bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-golden min-w-0 w-full sm:w-auto py-3 sm:py-2" onClick={() => window.open('https://instagram.com/fantasybuzios', '_blank')}>
                       <Instagram className="w-4 h-4 mr-2 flex-shrink-0" />
                       <span className="truncate">{t.social.instagram}</span>
                     </Button>
