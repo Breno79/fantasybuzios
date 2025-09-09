@@ -1,90 +1,73 @@
-# Fantasy Búzios - Website
-
-Um website elegante para a pousada Fantasy Búzios, localizada na Armação de Búzios, Rio de Janeiro.
+# Welcome to your Lovable project
 
 ## Project info
 
-**Current Lovable Project**: https://lovable.dev/projects/47844a48-35c4-4b0a-b9a8-e12fad5478ee
-**GitHub Repository**: https://github.com/breno79/fantasybuzios
-**Live Website**: https://breno79.github.io/fantasybuzios/
-**Custom Domain**: https://www.fantasybuzios.com.br
+**URL**: https://lovable.dev/projects/37e46c0c-8a2e-4a28-91e4-aceb1295e451
 
-## Sobre o Projeto
+## How can I edit this code?
 
-Website responsivo desenvolvido para a pousada Fantasy Búzios, apresentando:
-- Informações sobre acomodações e quartos
-- Galeria de fotos da propriedade
-- Informações sobre a cidade de Búzios
-- Formulário de contato integrado
-- Suporte a múltiplos idiomas (Português, Inglês, Espanhol)
-
-## Como editar este código?
-
-Existem várias maneiras de editar esta aplicação.
+There are several ways of editing your application.
 
 **Use Lovable**
 
-Simplesmente visite o [Projeto Lovable](https://lovable.dev/projects/47844a48-35c4-4b0a-b9a8-e12fad5478ee) e comece a usar prompts.
+Simply visit the [Lovable Project](https://lovable.dev/projects/37e46c0c-8a2e-4a28-91e4-aceb1295e451) and start prompting.
 
-Mudanças feitas via Lovable serão commitadas automaticamente neste repositório.
+Changes made via Lovable will be committed automatically to this repo.
 
-**Use seu IDE preferido**
+**Use your preferred IDE**
 
-Se você quiser trabalhar localmente usando seu próprio IDE, você pode clonar este repo e fazer push das mudanças. Mudanças enviadas também serão refletidas no Lovable.
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-O único requisito é ter Node.js & npm instalado - [instale com nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Siga estes passos:
+Follow these steps:
 
 ```sh
-# Passo 1: Clone o repositório usando a URL Git do projeto.
-git clone https://github.com/breno79/fantasybuzios.git
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-# Passo 2: Navegue para o diretório do projeto.
-cd fantasybuzios
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-# Passo 3: Instale as dependências necessárias.
+# Step 3: Install the necessary dependencies.
 npm i
 
-# Passo 4: Inicie o servidor de desenvolvimento com auto-reload e preview instantâneo.
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-**Edite um arquivo diretamente no GitHub**
+**Edit a file directly in GitHub**
 
-- Navegue para o(s) arquivo(s) desejado(s).
-- Clique no botão "Edit" (ícone de lápis) no canto superior direito da visualização do arquivo.
-- Faça suas mudanças e commit das alterações.
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
 **Use GitHub Codespaces**
 
-- Navegue para a página principal do seu repositório.
-- Clique no botão "Code" (botão verde) próximo ao canto superior direito.
-- Selecione a aba "Codespaces".
-- Clique em "New codespace" para lançar um novo ambiente Codespace.
-- Edite arquivos diretamente no Codespace e commit e push suas mudanças quando terminar.
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## Quais tecnologias são usadas neste projeto?
+## What technologies are used for this project?
 
-Este projeto é construído com:
+This project is built with:
 
 - Vite
 - TypeScript
 - React
 - shadcn-ui
 - Tailwind CSS
-- Supabase (para formulário de contato)
 
-## Como posso fazer deploy deste projeto?
+## How can I deploy this project?
 
-O projeto é automaticamente deployado no GitHub Pages quando mudanças são feitas na branch main.
+Simply open [Lovable](https://lovable.dev/projects/37e46c0c-8a2e-4a28-91e4-aceb1295e451) and click on Share -> Publish.
 
-Você também pode fazer deploy através do [Lovable](https://lovable.dev/projects/47844a48-35c4-4b0a-b9a8-e12fad5478ee) clicando em Share -> Publish.
+## Can I connect a custom domain to my Lovable project?
 
-## Posso conectar um domínio customizado?
+Yes, you can!
 
-Sim, você pode conectar um domínio customizado tanto através do GitHub Pages quanto através do Lovable.
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Para conectar via Lovable: navegue para Project > Settings > Domains e clique em Connect Domain.
-
-Leia mais aqui: [Configurando um domínio customizado](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
