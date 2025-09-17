@@ -9,6 +9,46 @@ import { Button } from "@/components/ui/button";
 
 const propertyImages = [
   {
+    src: "/lovable-uploads/IMG-20250830-WA0088.jpg",
+    alt: "Stunning sunset view over the pool with mountains in background at Fantasy Búzios Guesthouse"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0087.jpg",
+    alt: "Terrace lounge chairs with panoramic sunset view and ocean horizon"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0086.jpg",
+    alt: "Pool area during daytime showing yellow guesthouse facade and tropical surroundings"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0085.jpg",
+    alt: "Pool with waterfall feature and spa area surrounded by stone decking"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0084.jpg",
+    alt: "Wooden deck terrace dining area with chairs and table at golden hour"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0083.jpg",
+    alt: "Elegant living room with wooden bookshelf, chandelier and comfortable seating"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0082.jpg",
+    alt: "Cozy living room interior with glass coffee table and classic decor"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0081.jpg",
+    alt: "Guest bedroom with twin beds, turquoise accents and modern amenities"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0080.jpg",
+    alt: "Spacious bedroom with double bed, single bed and warm lighting"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0079.jpg",
+    alt: "Formal dining room with glass table, elegant chairs and marble flooring"
+  },
+  {
     src: "/lovable-uploads/728d680c-5d4f-4422-a6aa-8a2462021244.png",
     alt: "Pool area with ocean view and lounge chairs at Fantasy Búzios Guesthouse"
   },
