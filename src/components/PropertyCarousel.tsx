@@ -105,14 +105,6 @@ const propertyImages = [
     alt: "Beautiful orchid flowers by the pool area"
   },
   {
-    src: "/lovable-uploads/4725a85d-d51a-4d85-837a-306c3bc37e1e.png",
-    alt: "Pool with integrated spa and jacuzzi area"
-  },
-  {
-    src: "/lovable-uploads/480b4ad0-176d-4c86-9f0f-b583ffaa1c1f.png",
-    alt: "Pool deck with waterfall feature and ocean view"
-  },
-  {
     src: "/lovable-uploads/40ed6819-56de-48b8-9445-9d3aab1da82d.png",
     alt: "Front exterior view of Fantasy Búzios Guesthouse"
   },
