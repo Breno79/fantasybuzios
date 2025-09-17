@@ -9,6 +9,46 @@ import { Button } from "@/components/ui/button";
 
 const propertyImages = [
   {
+    src: "/lovable-uploads/IMG-20250830-WA0077.jpg",
+    alt: "Beautiful tropical orchid flowers by the pool with clear blue sky background"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0076.jpg",
+    alt: "Modern bedroom with ocean view, white decor and comfortable bedding"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0075.jpg",
+    alt: "Cozy hammock area with stunning ocean panorama through the window"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0074.jpg",
+    alt: "Comfortable guest room with TV, air conditioning and modern amenities"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0073.jpg",
+    alt: "Charming succulent garden arrangement with colorful plants"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0072.jpg",
+    alt: "Complete guesthouse exterior view with pool and wooden deck area"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0071.jpg",
+    alt: "Delicious breakfast spread by the pool with fresh fruits and coffee"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0070.jpg",
+    alt: "Vibrant red hibiscus flower in the tropical garden"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0069.jpg",
+    alt: "Abundant breakfast buffet with fresh breads, fruits and local delicacies"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0068.jpg",
+    alt: "Close-up of tropical breakfast fruits including watermelon, papaya and oranges"
+  },
+  {
     src: "/lovable-uploads/IMG-20250830-WA0088.jpg",
     alt: "Stunning sunset view over the pool with mountains in background at Fantasy Búzios Guesthouse"
   },
