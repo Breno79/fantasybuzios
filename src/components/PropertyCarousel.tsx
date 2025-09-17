@@ -9,6 +9,14 @@ import { Button } from "@/components/ui/button";
 
 const propertyImages = [
   {
+    src: "/lovable-uploads/IMG-20250830-WA0067.jpg",
+    alt: "Sunset terrace view with red flowers and outdoor dining furniture"
+  },
+  {
+    src: "/lovable-uploads/IMG-20250830-WA0066.jpg",
+    alt: "Golden hour terrace dining area with panoramic mountain and ocean views"
+  },
+  {
     src: "/lovable-uploads/IMG-20250830-WA0077.jpg",
     alt: "Beautiful tropical orchid flowers by the pool with clear blue sky background"
   },
