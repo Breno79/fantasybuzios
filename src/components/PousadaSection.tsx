@@ -82,9 +82,9 @@ export const PousadaSection = ({
         <div className="max-w-6xl mx-auto bg-white">
           {/* Header */}
           <header className="text-center mb-16">
-            <h2 className="text-4xl mb-4 font-bold text-black md:text-5xl">
+            <h1 className="text-4xl mb-4 font-bold text-black md:text-5xl">
               {t.title}
-            </h2>
+            </h1>
             <p className="text-xl mb-8 text-inherit">
               {t.subtitle}
             </p>
