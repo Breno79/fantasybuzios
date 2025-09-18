@@ -25,7 +25,7 @@ const translations = {
     features: 'Our Amenities',
     amenities: {
       wifi: 'Free Wi-Fi',
-      parking: 'Parking',
+      parking: 'Street Parking',
       breakfast: 'Breakfast',
       pool: 'Private Pool',
       garden: 'Tropical Garden',
@@ -39,7 +39,7 @@ const translations = {
     features: 'Nuestras Comodidades',
     amenities: {
       wifi: 'Wi-Fi Gratuito',
-      parking: 'Estacionamiento',
+      parking: 'Calle Tranquila',
       breakfast: 'Desayuno',
       pool: 'Piscina Privada',
       garden: 'Jardín Tropical',
