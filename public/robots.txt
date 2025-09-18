@@ -12,11 +12,3 @@ Allow: /
 
 User-agent: *
 Allow: /
-
-Sitemap: https://www.fantasybuzios.com.br/sitemap.xml
-
-# Optimize crawling
-Crawl-delay: 1
-
-# Allow access to images
-Allow: /lovable-uploads/

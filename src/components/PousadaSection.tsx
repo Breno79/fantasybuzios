@@ -81,7 +81,7 @@ export const PousadaSection = ({
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto bg-white">
           {/* Header */}
-          <header className="text-center mb-16">
+          <div className="text-center mb-16">
             <h2 className="text-4xl mb-4 font-bold text-black md:text-5xl">
               {t.title}
             </h2>
@@ -89,7 +89,7 @@ export const PousadaSection = ({
               {t.subtitle}
             </p>
             <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
-          </header>
+          </div>
 
           {/* Main Content */}
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
